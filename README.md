@@ -1,13 +1,19 @@
-#Calender Phase2
+# Calender
 
-##Important note
-* This program requires mysql database for storage and unfortunately our code will not run on your computer.
+This was part of my CSC207 - Software Design course project that my team and I had built. It heavily focusses on the use of software design patterns and implementation.
+
+## Important note
+* This program requires mysql database for storage.
 * All input data format is in dd/MM/yyyy HH:mm:ss, example: 23/07/2022 13:34:45 means 
 July 23rd 2022, at 13 hours 34 minutes 45 second
 * Event start time cannot be after end time
 * To prevent data loss when exiting program, please use provided logout option
 
-##Design patterns used:
+## Configuration
+* You must have MySql server live and have created a database.
+* Then change the connection() method information to your personal info and run the code
+
+## Design patterns used:
 
 1: Facade design pattern
 * Classes involved: ViewFactory, CalenderManagement, ViewManagement
@@ -29,3 +35,10 @@ July 23rd 2022, at 13 hours 34 minutes 45 second
 4: Builder design pattern
 * Classes involved: ViewFactoryBuilder, ViewFactory, CalenderManagement, ViewManagement
 * Description: As mentioned above, in our program design, we implemented a facade design pattern between the ViewFactory, CalenderManagement and ViewManagement class. While the facade design pattern can provide high cohesion low coupling design, this pattern makes the creation of ViewFactory object very complicated and requires multiple steps. This creation of a complex structure provided an opportunity to apply the builder design pattern. In particular, we created a new ViewFactoryBuilder class to handle the creation of a ViewFactory object. With this adjustment, we can obscure the complex creation and internal structure of the ViewFactory object.
+
+
+## Contributors
+* Ansh Chokshi
+* Ashu Banjara
+* Camus Lam
+* Mandi Qu
