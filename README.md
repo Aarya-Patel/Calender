@@ -1,6 +1,6 @@
 # Calender
 
-This was part of my CSC207 - Software Design course project that my team and I had built. It heavily focusses on the use of software design patterns and implementation.
+This was part of my CSC207 - Software Design course project that my team and I had built. It heavily focusses on the use of software design patterns and implementation. We built a calender app with a GUI interface that allows you to create events, alerts, memos, and tags to allow for searching, notifying and various other features. 
 
 ## Important note
 * This program requires mysql database for storage.
